@@ -8,11 +8,12 @@
 
 ## 👋 About Me
 I’m **Marco Trapani**, a **QA Tester** from Italy with **3+ years of professional experience** in the video game industry.  
-My mission is to ensure that games reach players in the **best possible quality**, combining a **creative background in Game Design** with a **keen eye for detail** and **analytical testing experience**.  
+My mission is to ensure that games reach players in the best possible quality, combining a **creative background in Game Design** with a **keen eye for detail** and **analytical testing experience**.  
 
 🎓 Studied **Game Design** at [Digital Bros Game Academy](https://www.dbgameacademy.it/), building a solid creative foundation and working on collaborative projects like [Pogo Pekan](https://digital-bros-game-academy.itch.io/pogo-pekan).  
 🕹️ Joined **Milestone** as a QA Tester, gaining expertise in **manual testing**, **TRC & XR compliance**, and cross-team collaboration with developers.  
 🌍 Passionate about **sandbox**, **medieval**, **immersive games**, **shooters**.
+
 🏔️ Outside of gaming, I enjoy **outdoor life**, **sports**, wwriting **fantasy novels**, composing **music**.  
 
 ---
