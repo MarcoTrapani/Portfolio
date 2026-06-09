@@ -35,7 +35,7 @@ My mission is to ensure that games reach players in the best possible quality, c
 - [**Monster Jam™ Showdown (2024)**](https://milestone.it/games/monster-jam-showdown/) – PC (Steam, Epic, Microsoft Store), PS5, Xbox Series X/S, Nintendo Switch 
 - [**Monster Energy Supercross – The Official Videogame 7**](https://milestone.it/games/supercross-25/) – PC (Epic Games Store, STEAM), PS5, Xbox Series X|S
 - [**Screamer**](https://milestone.it/games/screamer/) – PC (Epic Games Store, STEAM), PS5, Xbox Series X|S
-- [**Screamer**](https://milestone.it/games/hot-wheels-infinite-rush/) – PC (Epic Games Store, STEAM), PS5, Xbox Series X|S, Nintendo Switch 2
+- [**HOT WHEELS™ Infinite Rush**](https://milestone.it/games/hot-wheels-infinite-rush/) – PC (Epic Games Store, STEAM), PS5, Xbox Series X|S, Nintendo Switch 2
 
 ---
 
