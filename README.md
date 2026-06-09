@@ -22,7 +22,7 @@ My mission is to ensure that games reach players in the best possible quality, c
 
 ## 🛠️ Skills & Tools
 - 🎯 Manual & Functional Testing  
-- ✅ TRC & XR Compliance (Sony, Microsoft)  
+- ✅ TRC & XR Compliance (Sony, Microsoft, Nintendo)  
 - 📝 Bug Tracking & Clear Documentation  
 - 🤝 Dev Team Collaboration  
 - ⚙️ Knowledge of Game Systems & Mechanics  
@@ -34,6 +34,8 @@ My mission is to ensure that games reach players in the best possible quality, c
 - [**MotoGP™24 (2024)**](https://milestone.it/games/motogp-24/) – PC (Steam, Epic, Microsoft Store), PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch
 - [**Monster Jam™ Showdown (2024)**](https://milestone.it/games/monster-jam-showdown/) – PC (Steam, Epic, Microsoft Store), PS5, Xbox Series X/S, Nintendo Switch 
 - [**Monster Energy Supercross – The Official Videogame 7**](https://milestone.it/games/supercross-25/) – PC (Epic Games Store, STEAM), PS5, Xbox Series X|S
+- [**Screamer**](https://milestone.it/games/screamer/) – PC (Epic Games Store, STEAM), PS5, Xbox Series X|S
+- [**Screamer**](https://milestone.it/games/hot-wheels-infinite-rush/) – PC (Epic Games Store, STEAM), PS5, Xbox Series X|S, Nintendo Switch 2
 
 ---
 
@@ -47,8 +49,9 @@ Here you can explore examples of my QA work:
 ---
 
 ## 🌍 Career Goals
-- Keep growing as a **QA professional** in collaborative, high-quality game development environments.  
-- Contribute to **immersive, systemic, and player-driven experiences**.   
+- Continue growing as a Gameplay & Systems QA professional in ambitious game development environments.
+- Contribute to immersive RPGs, sandbox worlds, and systemic gameplay experiences that reward player agency and exploration.
+- Bridge QA and Game Design perspectives to help teams deliver coherent, engaging, and memorable player experiences.   
 
 ---
 
