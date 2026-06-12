@@ -44,7 +44,19 @@ My mission is to ensure that games reach players in the best possible quality, c
 Here you can explore examples of my QA work:  
 
 - [🪲 Bug Reports](./bug-reports) – Clear and structured reports of issues found in test environments.  
-- [✅ Test Cases](./test-cases) – Sample test case scenarios and structured test plans.  
+- [✅ Test Cases](./test-cases) – Sample test case scenarios and structured test plans.
+
+---
+
+## 📂 Case Studies
+
+### Mount & Blade II: Bannerlord — Technical QA Case Study
+
+A systemic QA analysis of *Bannerlord* as a medieval sandbox: campaign simulation, largescale battles, diplomacy, economy, AI, persistence, late-game pacing and player-facing readability.
+
+**Focus:** Technical QA, systemic testing, save/load persistence, AI behavior, late-game pacing, war/peace logic.
+
+[Read the case study](case-studies/bannerlord/)
 
 ---
 
