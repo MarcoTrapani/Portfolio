@@ -2,7 +2,7 @@
 
 > This appendix expands the main Bannerlord case study with Technical QA artifacts.
 >
-> It is intended for  anyone interested in systemic testing methodology.
+> This appendix is intended as a practical Technical QA artifact for analyzing systemic sandbox risks, long-run campaign stability, state persistence and player-facing readability.
 >
 > [Back to Main Case Study](index.md)
 
@@ -10,9 +10,9 @@
 
 ## Technical QA Framing
 
-In a systemic sandbox, QA also means validating the integrity of the simulation: whether state changes are processed correctly, whether they persist after save/load, whether systems interact without corrupting long-term progression, and whether players can understand the outcomes produced by the game.
+In a systemic sandbox, QA also means validating simulation integrity. State changes must be processed correctly, persist after save/load, interact without corrupting long-term progression, and remain understandable to the player.
 
-A medieval sandbox such as *Bannerlord* contains many features that can appear functional in isolation:
+Many *Bannerlord* systems can pass isolated feature testing while still creating problems once connected to the broader campaign simulation:
 
 * battles can resolve correctly
 * armies can move
@@ -34,13 +34,7 @@ This is the core QA problem of systemic games: the issue is not only whether eac
 
 Not every issue in a sandbox is a bug in the strict functional sense.
 
-Some issues are functional bugs.
-Some are systemic failures.
-Some are balance problems.
-Some are exploit opportunities.
-Some are UX/readability issues.
-Some are performance or stability risks.
-Some are regressions introduced by changes to interconnected systems.
+In a systemic sandbox, issues can fall across several categories: functional defects, persistence failures, systemic breakdowns, balance problems, exploits, UX/readability issues, performance risks and regressions introduced by interconnected changes.
 
 | Issue Type           | Example in a Sandbox Context                                       | QA Concern             |
 | -------------------- | ------------------------------------------------------------------ | ---------------------- |
@@ -53,19 +47,19 @@ Some are regressions introduced by changes to interconnected systems.
 | Performance issue    | Siege battle frame time spikes due to AI/pathfinding load          | Playability risk       |
 | Regression issue     | A diplomacy patch breaks alliance behavior in old saves            | Patch stability risk   |
 
-This taxonomy is important because systemic games often produce issues that are difficult to classify.
+This taxonomy matters because systemic sandbox issues often sit between classic bug categories.
 
 For example “multi-front wars feel arbitrary” is not a classic bug report: it may involve diplomacy scoring, faction strength evaluation, map borders, tribute logic, AI aggression, player feedback and late-game pacing.
 
-The Technical QA task is to transform a vague player frustration into testable hypotheses.
+The Technical QA task is to transform vague player frustration into testable hypotheses, observable variables and reproducible investigation paths.
 
 ---
 
 ## Observability Requirements
 
-A QA approach to *Bannerlord* would require strong observability.
+A QA approach to Bannerlord would require observability into the campaign simulation, especially around diplomacy, army creation, prisoner state, economy and AI decision-making.
 
-In a systemic sandbox, many issues are not visible as immediate bugs but they become visible only when the game exposes enough state to understand why the simulation produced a specific outcome.
+In a systemic sandbox, many issues are not visible as immediate failures. They become testable only when enough simulation state is exposed to explain why a specific outcome occurred.
 
 Example: if a kingdom declares war, the player may only see the final event. But QA needs to understand the decision context:
 
@@ -90,22 +84,15 @@ With observability, that same issue can become testable:
 
 Useful debug data for systemic QA would include:
 
-* campaign event logs
-* war declaration reason scores
-* peace and tribute calculation logs
-* alliance and trade agreement state
-* army creation and disband logs
-* noble availability and prisoner state logs
-* settlement ownership history
-* siege state history
-* economy snapshots
-* caravan route logs
-* AI target selection logs
-* battle result snapshots
-* save-state comparison before/after reload
-* performance captures during battles and sieges
+| Category    | Useful Debug Data                                                    |
+| ----------- | -------------------------------------------------------------------- |
+| Diplomacy   | War reason scores, peace logic, tribute calculations                 |
+| Military    | Army creation/disband logs, noble availability, prisoner state       |
+| Economy     | Economy snapshots, caravan routes, trade agreement state             |
+| World State | Settlement ownership history, siege state history                    |
+| Validation  | Battle result snapshots, save-state comparison, performance captures |
 
-The goal is not to expose every internal variable to the player. The goal is to give QA enough data to distinguish between a functional bug, a balance issue, an AI issue, a UX issue or intended design.
+The goal is not to expose every internal variable to the player. The goal is to give QA enough evidence to classify the issue correctly: functional defect, balance problem, AI decision issue, UX/readability gap or intended behavior.
 
 ---
 
@@ -113,14 +100,14 @@ The goal is not to expose every internal variable to the player. The goal is to 
 
 Large-scale battles are one of *Bannerlord*’s most distinctive features. They are also one of the most important Technical QA risk areas.
 
-A large battle is not only a combat design challenge: it is a performance, AI, animation, pathfinding, collision, camera, audio and readability challenge happening at the same time.
+A large battle is not only a combat design challenge: it is a performance, AI, animation, pathfinding, collision, camera, audio and combat-readability challenge happening at the same time.
 
 Risk areas include:
 
-* frame time instability during large battles
-* CPU spikes caused by AI decision-making
-* pathfinding issues during sieges
-* cavalry collision and navigation problems
+* frame time spikes during reinforcement waves
+* CPU spikes during AI decision bursts
+* pathfinding failures in siege chokepoints
+* cavalry collision issues during dense engagements
 * reinforcement spawn spikes
 * ranged unit targeting overhead
 * animation and ragdoll load
@@ -143,9 +130,9 @@ Useful Technical QA checks would include:
 * crash log classification
 * performance regression comparison across builds
 
-Performance testing should not only ask: “Does the battle run?”.
+Performance testing should not only ask: “Does the battle run?”
 
-It should ask: “Does the battle remain playable, readable and stable under the conditions that the sandbox naturally creates?”.
+It should ask: “Does the battle remain playable, readable and stable under the conditions that the sandbox naturally creates?”
 
 ---
 
@@ -155,7 +142,7 @@ Many of the most important sandbox issues are difficult to reproduce because the
 
 A bug such as “lord duplicated after reload” may be relatively straightforward to isolate.
 
-A complaint such as “late-game wars feel arbitrary” is more difficult, it may depend on dozens of variables:
+A complaint such as “late-game wars feel arbitrary” is more difficult to isolate because it may depend on dozens of variables:
 
 * campaign day
 * kingdom strength
@@ -208,21 +195,16 @@ Even if final quality judgment requires interpretation, automated checks could h
 
 ### Automated Campaign Smoke Test
 
-* start or load a controlled campaign
-* simulate a defined number of in-game days
-* check for crashes
-* verify valid kingdoms, settlements and parties
-* detect impossible negative values
-* detect invalid ownership states
-* detect duplicated heroes or missing key entities
+1) start or load a controlled campaign
+2) simulate a defined number of in-game days
+3) check for crashes
+4) verify valid kingdoms, settlements and parties
+
+Fail the test if negative values appear in protected state variables, if settlements have invalid or null ownership, or if unique hero IDs are duplicated/missing after simulation.
 
 ### Automated Save/Load Integrity Test
 
-* create or load a controlled world state
-* save
-* reload
-* compare key state variables
-* verify prisoners, settlements, wars, armies, relations and party locations
+Create or load a controlled world state, save, reload, then diff key state variables: prisoner ownership, settlement ownership, active wars, army composition, relations and party locations.
 
 ### Automated Battle Benchmark
 
@@ -257,9 +239,7 @@ Automation would be especially useful for repetitive state validation, performan
 
 **Preconditions:**
 
-* Enemy army contains at least five noble heroes.
-* Player wins the battle.
-* Player captures at least two enemy lords.
+Enemy army contains at least five noble heroes. Player has enough prisoner capacity to capture at least two enemy lords. Battle takes place during an active war, with no peace event triggered before saving.
 
 **Steps:**
 
@@ -320,7 +300,7 @@ Major loss of player trust, battle consequences appear invalidated.
 
 **Expected Result:**
 
-Enemy response should be strategically believable. Allied factions should not ignore obvious defensive needs. Settlement risks should be communicated clearly to the player.
+Enemy response should be consistent with nearby military capacity, target value and distance. Allied AI should evaluate the recently conquered settlement as a defensive priority when its food, loyalty and garrison are critically low. Player notifications should clearly communicate loyalty, food, security and siege risk.
 
 **Failure Impact:**
 
@@ -360,7 +340,7 @@ Conquest feels unstable, arbitrary or impossible to consolidate.
 
 **Expected Result:**
 
-Additional wars should be explainable through relations, borders, strength, alliances, opportunity or previous conflict. They should not feel random or purely anti-player.
+Additional wars should be explainable through relations, borders, strength, alliances, opportunity or previous conflict. The declaration should have a traceable decision score and player-facing feedback sufficient to distinguish it from purely anti-player pressure.
 
 **Failure Impact:**
 
@@ -398,7 +378,7 @@ Late-game pressure becomes perceived as artificial prolonging rather than emerge
 
 **Expected Result:**
 
-Economic changes should be internally coherent and readable enough for the player to act on them.
+Economic changes should remain within expected ranges and correlate with visible world events: siege duration, food stock, village deliveries, caravan traffic and route safety.
 
 **Failure Impact:**
 
@@ -453,9 +433,12 @@ Player victories feel strategically meaningless; late-game becomes repetitive.
 
 **Environment:**
 Single-player campaign, late-game, player kingdom active, 900+ campaign days, multiple active wars.
+Build: [insert build/version]
+Platform: [insert platform]
+Save type: [new campaign / legacy save / modded-unmodded]
 
 **Observed Result:**
-After losing a major army and several nobles being captured, the enemy faction forms a new large army within a short period. This creates the perception that the previous victory had limited strategic impact.
+After losing a major army and multiple nobles, the enemy faction forms a new large army within [X] in-game days. The new army appears disproportionate to its available lords, settlements and recent losses, making the previous victory feel strategically non-persistent.
 
 **Expected Result:**
 Enemy recovery should be proportional to available lords, settlements, recruitment capacity, economy and recent losses. If rapid recovery is intended, the game should communicate why the faction is still capable of fielding a large force.
@@ -484,7 +467,7 @@ Enemy recovery should be proportional to available lords, settlements, recruitme
 * save/load checks
 
 **Impact:**
-High. The issue can reduce perceived consequence quality, weaken player agency and contribute to late-game war fatigue.
+Severity: High. The issue can reduce perceived consequence quality, weaken player agency, invalidate major battle outcomes and contribute to late-game war fatigue.
 
 **QA Notes:**
 This may not be a strict functional bug. It may be a balance issue, AI recovery issue, missing player feedback issue or intended anti-snowball behavior that lacks readability. Further validation requires access to army creation rules, faction recovery parameters and war/diplomacy scoring.
