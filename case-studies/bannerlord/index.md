@@ -305,7 +305,7 @@ In a systemic sandbox, QA is not only about checking whether each single feature
 
 ## Continue Reading
 
-For the full Technical QA breakdown, including bug taxonomy, observability requirements, performance risks, automation candidates, detailed test scenarios and an example bug report, read the extended appendix:
+Thanks for reading! For the full Technical QA breakdown, including bug taxonomy, observability requirements, performance risks, automation candidates, detailed test scenarios and an example bug report, read the extended appendix:
 
 [Extended Technical Appendix](technical-appendix.md)
 
