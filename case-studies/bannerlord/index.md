@@ -141,6 +141,10 @@ Useful QA questions include:
 
 Scenario: defeat a kingdom’s main 800+ army, capture 8–12 nobles, save/load, advance campaign time by 7/14/30 in-game days, then monitor army regeneration, party count, tribute demands and settlement pressure.
 
+![Results after battle of a destroyed army showing casualties, prisoners, more parties](assets/Consequences_1.jpg)
+
+*Figure 1 — Result screen showing the aftermath of an enemy army which lost a battle: more parties survived and could form a new army suggesting the victory will be absorbed faster. Bannerlord © TaleWorlds Entertainment.*
+
 ---
 
 ### 2. Mid/Late-Game Pacing
