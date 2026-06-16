@@ -161,7 +161,7 @@ Once the player becomes powerful, the sandbox has to maintain challenge without 
 
 ![Diplomacy screen in a late-game sandbox](assets/Kingdom_2.jpg)
 
-*Figure 3 — A late-game diplomacy state where Vlandia repeatedly declares war despite having lower total strength than the player’s faction. This suggests a potential diplomacy evaluation risk: war declaration logic may be over prioritizing aggression, border exposure or anti-snowball pressure while under-prioritizing relative strength, recent losses and player-facing readability. Does the game explain why Vlandia believes this war is strategically reasonable? Bannerlord © TaleWorlds Entertainment.*
+*Figure 3 — With only four factions remaining and the player controlling the strongest kingdom, Vlandia's war declaration raises a readability question: which strategic factors are considered more important than relative military strength, and are those factors sufficiently communicated to the player?. Does the game explain why Vlandia believes this war is strategically reasonable? Bannerlord © TaleWorlds Entertainment.*
 
 Common late-game risks include:
 
