@@ -6,7 +6,7 @@
 
 ## Purpose
 
-Assess whether a player joining an already active online match receives the correct current state of the game.
+Assess whether a player joining an already active match receives the correct current state of the game.
 
 Join-in-progress issues are risky because the joining player may enter a technically valid session while seeing a different version of the match from everyone else.
 
