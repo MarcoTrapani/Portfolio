@@ -112,6 +112,10 @@ It is also:
 
 This is where systemic QA becomes more complex than feature verification. The issue is not only whether combat, diplomacy, AI or economy work individually. The issue is whether they continue to make sense after they affect each other.
 
+![Battle Result Screen](assets/Consequences_2.jpg)
+
+*Figure 1 — Battle result screen showing casualties and resources. Bannerlord © TaleWorlds Entertainment.*
+
 ---
 
 ## Main QA Challenges
@@ -143,7 +147,7 @@ Scenario: defeat a kingdom’s main 800+ army, capture 8–12 nobles, save/load,
 
 ![Results after battle of a destroyed army showing casualties, prisoners, more parties](assets/Consequences_1.jpg)
 
-*Figure 1 — Result screen showing the aftermath of an enemy army which lost a battle: more parties survived and could form a new army suggesting the victory will be absorbed faster. Bannerlord © TaleWorlds Entertainment.*
+*Figure 2 — Result screen showing the aftermath of an enemy army which lost a battle: more parties survived and could form a new army suggesting the victory will be absorbed faster. Bannerlord © TaleWorlds Entertainment.*
 
 ---
 
@@ -154,6 +158,10 @@ The early game of *Bannerlord* is often the clearest part of the experience: the
 The mid-to-late game is where the simulation becomes harder to validate, because the player has enough military, economic and political power to stress systems that were stable during the early campaign.
 
 Once the player becomes powerful, the sandbox has to maintain challenge without turning into repetitive pressure: this is where many systemic games are most fragile.
+
+![Diplomacy screen in a late-game sandbox](assets/Kingdom_2.jpg)
+
+*Figure 3 — A late-game diplomacy state where Vlandia repeatedly declares war despite having lower total strength than the player’s faction. This suggests a potential diplomacy evaluation risk: war declaration logic may be over prioritizing aggression, border exposure or anti-snowball pressure while under-prioritizing relative strength, recent losses and player-facing readability. Does the game explain why Vlandia believes this war is strategically reasonable? Bannerlord © TaleWorlds Entertainment.*
 
 Common late-game risks include:
 
