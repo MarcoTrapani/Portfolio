@@ -49,7 +49,7 @@ The intended reader is not only a recruiter. The document is mainly written for 
 
 ---
 
-## Visual Material Note
+## Material Note
 
 To avoid misrepresenting ownership of Raw Power Games' material, this case study is designed to rely primarily on public material from *Chronicles: Medieval*, which is treated as reference material and cited as such. 
 
