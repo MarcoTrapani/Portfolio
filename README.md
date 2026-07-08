@@ -50,6 +50,22 @@ Here you can explore examples of my QA work:
 
 ## 📂 Case Studies
 
+### Commanding Chaos #1 — Emergent Battle Readability
+
+A QA & Design case study exploring how large-scale medieval battles can remain chaotic without feeling random.
+
+Using publicly available material from *Chronicles: Medieval* by Raw Power Games as a reference point, I investigated battle systems through a QA lens: player-facing causality, AI interpretation of player intent, formations under pressure, casualties, morale, rout, retreat, scale, reproducibility, and systemic risk.
+
+The core question behind the article is simple:
+
+**How can a player command chaos if they cannot understand it?**
+
+This case study includes a systemic battle model, risk analysis, bug taxonomy, observability requirements, example test cases, and a complete bug report focused on battle readability.
+
+It is not a review of the game, but a professional QA/design investigation into how complex gameplay systems can be tested as chains of cause and effect.
+
+[Read the case study](case-studies/chronicles-medieval/commanding-chaos-1.md)
+
 ### Mount & Blade II: Bannerlord — Technical QA Case Study
 
 A systemic QA analysis of *Bannerlord* as a medieval sandbox: campaign simulation, largescale battles, diplomacy, economy, AI, persistence, late-game pacing and player-facing readability.
