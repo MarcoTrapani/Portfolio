@@ -29,7 +29,7 @@ My mission is to ensure that games reach players in the best possible quality, c
 
 ---
 
-## Mindset
+## 🧭 Mindset
 
 I approach QA as a way to reduce uncertainty, expose risk, and help teams make better decisions.
 
