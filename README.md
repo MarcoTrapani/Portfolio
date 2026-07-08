@@ -29,6 +29,18 @@ My mission is to ensure that games reach players in the best possible quality, c
 
 ---
 
+## Mindset
+
+I approach QA as a way to reduce uncertainty, expose risk, and help teams make better decisions.
+
+My focus is not only to find issues, but to understand why they happen, how they affect the player or product, and what kind of action they require. I try to turn complexity into clear signals: reproducible evidence, concise documentation, impact-based prioritization, and practical next steps.
+
+I value ownership, high standards, and direct communication. When something is unclear, I investigate. When a problem is complex, I break it down. When a system behaves unexpectedly, I look for patterns, edge cases, and risks that may not be immediately visible.
+
+Whether working on games or broader software products, I’m interested in quality as a product mindset: clarity, reliability, usability, and long-term maintainability.
+
+---
+
 ## 🎮 Some Games I Worked On
 - [**Ride 5 (2023)**](https://ridevideogame.com/) – PC (Steam, Epic, Microsoft Store), PS5, Xbox Series X/S
 - [**MotoGP™24 (2024)**](https://milestone.it/games/motogp-24/) – PC (Steam, Epic, Microsoft Store), PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch
