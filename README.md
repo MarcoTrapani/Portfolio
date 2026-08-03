@@ -195,8 +195,8 @@ My Game Design background supports this approach: quality is not only functional
 
 ## Repository Guide
 
-```text
-Portfolio/
+```
+Portfolio
 ├── case-studies/   # Long-form QA and Design investigations
 ├── test-cases/     # Feature and system test specifications
 ├── bug-reports/    # Fictional professional reporting samples
