@@ -1,9 +1,9 @@
 <div align="center">
 
 <p align="center">
-  <a href="./assets/images/profile-picture-marco-trapani">
+  <a href="./assets/images/profile-picture-marco-trapani.jpg">
     <img
-      src="./assets/images/profile-picture-marco-trapani"
+      src="./assets/images/profile-picture-marco-trapani.jpg"
       width="300"
       alt="Marco Trapani">
   </a>
