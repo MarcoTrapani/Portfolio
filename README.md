@@ -128,14 +128,22 @@ Structured examples showing how I communicate observed behaviour, player and pro
 
 ## Selected Games I Worked On
 
-I have contributed to projects released or developed across **PC, PlayStation, Xbox and Nintendo platforms**.
+I have contributed to projects developed or released across **PC, PlayStation, Xbox and Nintendo platforms**.
 
-* [**RIDE 5**](https://ridevideogame.com/)
-* [**MotoGP™24**](https://milestone.it/games/motogp-24/)
-* [**Monster Jam™ Showdown**](https://milestone.it/games/monster-jam-showdown/)
-* [**Monster Energy Supercross – The Official Videogame 7**](https://milestone.it/games/supercross-25/)
-* [**Screamer**](https://milestone.it/games/screamer/)
-* [**HOT WHEELS™ Infinite Rush**](https://milestone.it/games/hot-wheels-infinite-rush/)
+<table>
+<tr>
+<td align="center" width="25%"><a href="https://milestone.it/games/ride-6/"><img src="./assets/games/ride-6.jpg" width="180" alt="RIDE 6 cover"></a><br><strong>RIDE 6</strong></td>
+<td align="center" width="25%"><a href="https://milestone.it/games/motogp-26/"><img src="./assets/games/motogp-26.jpg" width="180" alt="MotoGP 26 cover"></a><br><strong>MotoGP™26</strong></td>
+<td align="center" width="25%"><a href="https://milestone.it/games/ride-5/"><img src="./assets/games/ride-5.jpg" width="180" alt="RIDE 5 cover"></a><br><strong>RIDE 5</strong></td>
+<td align="center" width="25%"><a href="https://milestone.it/games/motogp-24/"><img src="./assets/games/motogp-24.jpg" width="180" alt="MotoGP 24 cover"></a><br><strong>MotoGP™24</strong></td>
+</tr>
+<tr>
+<td align="center" width="25%"><a href="https://milestone.it/games/monster-jam-showdown/"><img src="./assets/games/monster-jam-showdown.jpg" width="180" alt="Monster Jam Showdown cover"></a><br><strong>Monster Jam™ Showdown</strong></td>
+<td align="center" width="25%"><img src="./assets/games/supercross-7.jpg" width="180" alt="Monster Energy Supercross 7 cover"><br><strong>Monster Energy Supercross 7</strong></td>
+<td align="center" width="25%"><a href="https://milestone.it/games/screamer/"><img src="./assets/games/screamer.jpg" width="180" alt="Screamer cover"></a><br><strong>Screamer</strong></td>
+<td align="center" width="25%"><a href="https://milestone.it/games/hot-wheels-infinite-rush/"><img src="./assets/games/hot-wheels-infinite-rush.jpg" width="180" alt="Hot Wheels Infinite Rush cover"></a><br><strong>HOT WHEELS™ Infinite Rush</strong></td>
+</tr>
+</table>
 
 Across these projects, my experience includes functional and gameplay testing, regression, build validation, platform testing, issue investigation and cross-team collaboration.
 
