@@ -1,5 +1,9 @@
 # 🐞 Compliance Report – PlayStation TRC Submission Failure: Save Data Corruption on Suspend/Resume
 
+> Portfolio sample based on a fictional game scenario.
+> No proprietary project, platform-confidential material or internal
+> production data is represented in this document.
+
 > This report focuses on a **platform compliance issue** identified during PlayStation TRC testing, highlighting potential certification blockers and impact on **player experience and submission approval**.
 
 ---
