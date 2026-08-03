@@ -54,6 +54,7 @@ It also includes an extended technical appendix covering risk taxonomy, observab
 **Demonstrates:** systemic testing · long-run scenarios · persistence · AI investigation · risk analysis
 
 [Read the main case study →](./case-studies/bannerlord/index.md)
+
 [Read the extended technical appendix →](./case-studies/bannerlord/technical-appendix.md)
 
 ---
