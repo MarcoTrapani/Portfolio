@@ -133,7 +133,7 @@ I have contributed to projects released or developed across **PC, PlayStation, X
 * [**RIDE 5**](https://ridevideogame.com/)
 * [**MotoGP™24**](https://milestone.it/games/motogp-24/)
 * [**Monster Jam™ Showdown**](https://milestone.it/games/monster-jam-showdown/)
-* **Monster Energy Supercross – The Official Videogame 7**
+* [**Monster Energy Supercross – The Official Videogame 7**](https://store.steampowered.com/app/2581370/Monster_Energy_Supercross_25__The_Official_Video_Game/)
 * [**Screamer**](https://milestone.it/games/screamer/)
 * [**HOT WHEELS™ Infinite Rush**](https://milestone.it/games/hot-wheels-infinite-rush/)
 
