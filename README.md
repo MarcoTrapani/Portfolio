@@ -15,7 +15,7 @@
 
 Multi-platform Game QA focused on **technical investigation**, **systemic behaviour**, **build quality** and **player experience**.
 
-![Experience](https://img.shields.io/badge/Experience-3%2B%20Years-2ea44f?style=flat-square)
+![Experience](https://img.shields.io/badge/Experience-4%2B%20Years-2ea44f?style=flat-square)
 ![Platforms](https://img.shields.io/badge/Platforms-PC%20%7C%20PlayStation%20%7C%20Xbox%20%7C%20Nintendo-555555?style=flat-square)
 ![Background](https://img.shields.io/badge/Background-Game%20Design-8a2be2?style=flat-square)
 
