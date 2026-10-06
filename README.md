@@ -31,7 +31,7 @@ Multi-platform Game QA focused on **technical investigation**, **systemic behavi
 
 ## Professional Profile
 
-I am a Game QA professional from Italy with **3+ years of experience in multi-platform game development**.
+I am a Game QA professional from Italy with **4+ years of experience in multi-platform game development**.
 
 At **Milestone**, I have contributed to functional and gameplay testing, build validation, regression, platform compliance and release support across PC and console environments. My work focuses on identifying risk, isolating reproducible conditions and communicating findings clearly to development teams.
 
