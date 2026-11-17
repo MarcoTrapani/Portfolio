@@ -1,7 +1,7 @@
 # Commanding Chaos #2
 ## A QA & Design Investigation into Quest State, NPC Pathing & Systemic Recovery in *Gothic 1 Remake*
 
-**Author:** Marco Trapani  
+**Author:** Marco Trapani   
 **Perspective:** QA professional with a Game Design background  
 **Case study:** Public QA / Design investigation  
 **Reference project:** *Gothic 1 Remake* by Alkimia Interactive
